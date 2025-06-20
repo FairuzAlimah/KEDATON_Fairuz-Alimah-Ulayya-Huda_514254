@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         body {
-            background-color: #b81414;
+            background-color: #F3EDC8;
         }
 
         #map {
@@ -115,14 +115,14 @@
         <!-- Navigasi -->
         <div class="mb-4 text-center">
             <a href="{{ route('home') }}" class="btn btn-custom m-2"
-                style="background-color:#FFFF9E; color:#B22222;">Halaman
+                style="background-color:#B22222; color: #F3EDC8;">Halaman
                 Utama</a>
-            <a href="{{ route('map') }}" class="btn btn-custom m-2" style="background-color:#ffffdf; color: #ea0000;">Peta
+            <a href="{{ route('map') }}" class="btn btn-custom m-2" style="background-color:#7D0A0A; color: #F3EDC8;">Peta
                 Interaktif</a>
-            <a href="{{ route('table') }}" class="btn btn-custom m-2"
-                style="background-color:#FFFF9E; color: #B22222;">Data Tabel</a>
+            <a href="{{ route('table') }}" class="btn btn-custom m-2" style="background-color:#B22222; color: #F3EDC8;">Data
+                Tabel</a>
             <a href="{{ route('kedaton') }}" class="btn btn-custom m-2"
-                style="background-color:#ffffdf; color: #ea0000;">Tentang Kami</a>
+                style="background-color:#7D0A0A; color: #F3EDC8;">Tentang Kami</a>
         </div>
 
         <!-- Statistik -->
@@ -131,7 +131,7 @@
                 <div class="card shadow-sm text-center statistik-card">
                     <div class="card-body">
                         <h5 style="color:#B22222;">Total UMKM</h5>
-                        <h2 style="color:#ecec53;">{{ $total_umkm }}</h2>
+                        <h2 style="color:#7D0A0A;">{{ $total_umkm }}</h2>
                     </div>
                 </div>
             </div>
@@ -140,16 +140,17 @@
                 <div class="card shadow-sm text-center statistik-card">
                     <div class="card-body">
                         <h5 style="color:#B22222;">Kategori UMKM</h5>
-                        <h2 style="color:#ecec53;">{{ $kategori_umkm }}</h2>
+                        <h2 style="color:#7D0A0A;">{{ $kategori_umkm }}</h2>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Chart -->
-        <div class="card shadow-sm mb-6" style="border-top: 4px solid #FFFF9E; border-radius:10px;">
-            <div class="card-header" style="background-color: #FFFF9E; color: #B22222; font-weight: bold;">Distribusi UMKM
-                per Kategori</div>
+        <div class="card shadow-sm mb-6" style="border-top: 4px solid #B22222; border-radius:10px;">
+            <div class="card-header" style="background-color: #B22222; color: #FFFF9E; font-weight: bold;">
+                Distribusi UMKM per Kategori
+            </div>
             <div class="card-body text-center">
                 <div style="max-width: 500px; margin: 0 auto;"><canvas id="umkmChart"></canvas></div>
             </div>
@@ -157,13 +158,15 @@
 
         <!-- Peta -->
         <br>
-        <div class="card shadow-sm mb-6" style="border-top: 4px solid #ffffdf; border-radius:10px;">
-            <div class="card-header" style="background-color: #ffffdf; color: #ea0000; font-weight: bold;">Peta Persebaran
-                UMKM</div>
+        <div class="card shadow-sm mb-6" style="border-top: 4px solid #7D0A0A; border-radius:10px;">
+            <div class="card-header" style="background-color: #7D0A0A; color: #FFFF9E; font-weight: bold;">
+                Peta Persebaran UMKM
+            </div>
             <div class="card-body position-relative">
                 <div id="map"></div>
             </div>
         </div>
+
 
     </div>
 @endsection

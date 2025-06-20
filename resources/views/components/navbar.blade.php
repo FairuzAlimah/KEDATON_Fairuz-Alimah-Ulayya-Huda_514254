@@ -1,10 +1,10 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:  #FFFF9E;">
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top" style="background-color:  #B22222;">
     <div class="container-fluid">
 
         <!-- Tombol buka sidebar -->
         <button class="btn me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
-            style="background-color: #B22222; color:  #FFFF9E;">
+            style="background-color: #FFFF9E; color:  #B22222;">
             <i class="fa-solid fa-bars"></i>
         </button>
 
@@ -25,13 +25,10 @@
                 <img src="{{ asset('storage/images/logo.png') }}" alt="Logo Kedaton" class="logo-bounce" width="40"
                     height="40">
             @elseif($page['icon'])
-                <i class="fa-solid {{ $page['icon'] }} fa-fw fa-lg" style="color: #B22222;"></i>
+                <i class="fa-solid {{ $page['icon'] }} fa-fw fa-lg" style="color: #FFFF9E;"></i>
             @endif
-            <span class="fw-bold" style="font-weight: 800 !important; color: #B22222;">{{ $page['label'] }}</span>
+            <span class="fw-bold" style="font-weight: 800 !important; color: #FFFF9E;">{{ $page['label'] }}</span>
         </a>
-
-
-
 
         <!-- User info -->
         <div class="d-flex ms-auto">
@@ -65,31 +62,31 @@
 
 <!-- Sidebar Offcanvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu"
-    style="width: 220px; background-color: #B22222; color: #FFFF9E;">
-    <div class="offcanvas-header border-bottom border-light">
-        <h5 class="offcanvas-title"><i class="fa-solid fa-bars"></i> Menu</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    style="width: 220px; background-color: #FFFF9E; color: #B22222;">
+    <div class="offcanvas-header border-bottom border-dark">
+       <h5 class="offcanvas-title fw-bold"><i class="fa-solid fa-bars"></i> Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body p-2">
         <ul class="nav flex-column">
             <li class="nav-item mb-1">
                 <a class="nav-link sidebar-link fw-bold" href="{{ route('home') }}">
-                    <i class="fa-solid fa-house" style="color: #FFFF9E;"></i> Halaman Utama
+                    <i class="fa-solid fa-house" style="color: #B22222;"></i> Halaman Utama
                 </a>
             </li>
             <li class="nav-item mb-1">
                 <a class="nav-link sidebar-link fw-bold" href="{{ route('map') }}">
-                    <i class="fa-solid fa-map-location-dot" style="color: #FFFF9E;"></i> Peta Interaktif
+                    <i class="fa-solid fa-map-location-dot" style="color: #B22222;"></i> Peta Interaktif
                 </a>
             </li>
             <li class="nav-item mb-1">
                 <a class="nav-link sidebar-link fw-bold" href="{{ route('table') }}">
-                    <i class="fa-solid fa-table" style="color: #FFFF9E;"></i> Data Tabel
+                    <i class="fa-solid fa-table" style="color: #B22222;"></i> Data Tabel
                 </a>
             </li>
             <li class="nav-item mb-1">
                 <a class="nav-link sidebar-link fw-bold" href="{{ route('kedaton') }}">
-                    <i class="fa-solid fa-newspaper" style="color: #FFFF9E;"></i> Tentang Kami
+                    <i class="fa-solid fa-newspaper" style="color: #B22222;"></i> Tentang Kami
                 </a>
             </li>
 
@@ -97,13 +94,13 @@
                 <li class="nav-item mb-1">
                     <a class="nav-link sidebar-link fw-bold" data-bs-toggle="collapse" href="#dataSubmenu" role="button"
                         aria-expanded="false">
-                        <i class="fa-solid fa-database" style="color: #FFFF9E;"></i> Data
+                        <i class="fa-solid fa-database" style="color: #B22222;"></i> Data
                     </a>
                     <div class="collapse ps-3" id="dataSubmenu">
                         <ul class="list-unstyled">
                             <li>
                                 <a class="nav-link" href="{{ route('api.points') }}" target="_blank"
-                                    style="color: #FFFF9E;">
+                                    style="color: #B22222;">
                                     Titik UMKM
                                 </a>
                             </li>
@@ -111,8 +108,6 @@
                     </div>
                 </li>
             @endauth
-
-
         </ul>
     </div>
 </div>
@@ -120,13 +115,13 @@
 <!-- Style tambahan -->
 <style>
     .sidebar-link {
-        color: #FFFF9E;
+        color: #B22222;
         transition: 0.3s;
     }
 
     .sidebar-link:hover {
-        background-color: #FFFF9E;
-        color: #B22222 !important;
+        background-color: #B22222;
+        color: #FFFF9E !important;
         border-radius: 8px;
     }
 
@@ -135,54 +130,46 @@
     }
 
     .sidebar-link:hover i {
-        color: #B22222 !important;
-    }
-
-    .sidebar-link[data-bs-toggle="collapse"] {
         color: #FFFF9E !important;
     }
 
-    .sidebar-link[data-bs-toggle="collapse"]:hover {
-        background-color: #FFFF9E;
+    .sidebar-link[data-bs-toggle="collapse"] {
         color: #B22222 !important;
+    }
+
+    .sidebar-link[data-bs-toggle="collapse"]:hover {
+        background-color: #B22222;
+        color: #FFFF9E !important;
         border-radius: 8px;
     }
 
     .sidebar-link[data-bs-toggle="collapse"]:hover i {
-        color: #B22222 !important;
+        color: #FFFF9E !important;
     }
 
     .user-btn {
-        background-color: #B22222;
-        color: #FFFF9E;
+        background-color: #FFFF9E;
+        color: #B22222;
         border: none;
         transition: 0.3s;
     }
 
     .user-btn:hover {
-        background-color: #FFFF9E;
-        color: #B22222;
+        background-color: #B22222;
+        color: #FFFF9E;
     }
 
     .logo-bounce {
         animation: bounce 2s infinite;
-
     }
 
     @keyframes bounce {
-
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
+        0%, 20%, 50%, 80%, 100% {
             transform: translateY(0);
         }
-
         40% {
             transform: translateY(-10px);
         }
-
         60% {
             transform: translateY(-5px);
         }
