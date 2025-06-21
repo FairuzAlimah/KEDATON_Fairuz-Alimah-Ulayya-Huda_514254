@@ -1,5 +1,5 @@
-# KEDATON - Kanal Ekonomi dan Data Usah Terpeta Online
-Kedaton atau "Kanal Ekonomi dan Usaha Terpeta Online" merupakan salah satu webGIS ynag dapat digunakan untuk menyajikan informasi spasial UMKM di Kota Bandar Lampung. Kata "kedaton" tersebut mengusung kearifan lokal Lampung, di mana "kedaton" berarti pusat pemerintahan adat atau istana. Nama ini dipilih untuk merepresentasikan aplikasi sebagai pusat informasi spasial UMKM di Bandar Lampung. Layaknya Kedaton yang menjadi pusat kendali dan pengetahuan, webGIS ini menjadi wadah utama dalam menyajikan, mengelola, dan memahami potensi ekonomi lokal secara digital dan terpeta.
+# KEDATON - Kanal Ekonomi dan Data Usaha Terpeta Online
+Kedaton atau "Kanal Ekonomi dan Data Usaha Terpeta Online" merupakan salah satu webGIS ynag dapat digunakan untuk menyajikan informasi spasial UMKM di Kota Bandar Lampung. Kata "kedaton" tersebut mengusung kearifan lokal Lampung, di mana "kedaton" berarti pusat pemerintahan adat atau istana. Nama ini dipilih untuk merepresentasikan aplikasi sebagai pusat informasi spasial UMKM di Bandar Lampung. Layaknya Kedaton yang menjadi pusat kendali dan pengetahuan, webGIS ini menjadi wadah utama dalam menyajikan, mengelola, dan memahami potensi ekonomi lokal secara digital dan terpeta.
 
 >**Tujuan Pembuatan Website**
 >
@@ -17,7 +17,10 @@ Kedaton atau "Kanal Ekonomi dan Usaha Terpeta Online" merupakan salah satu webGI
 
 
 >**Tangkapan Layar Komponen Penting pada Website**
->![Peta Interaktif](foto/peta_interaktif.png)
->![Halaman Awal](foto/halaman_awal.png)
->![Tabel Data](foto/tabel.png)
->![edit_data](foto/edit_data.png)
+>![Halaman Awal](foto/halamanawal1.png)
+>![Halaman Awal](foto/halamanawal2.png)
+>![Peta Interaktif](foto/peta.png)
+>>![form input](foto/form.png)
+>![Tabel Data](foto/tabel1.png)
+>![Tabel Data](foto/tabel2.png)
+>>>![Halaman Lain](foto/kedaton.png)
