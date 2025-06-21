@@ -23,4 +23,9 @@ Kedaton atau "Kanal Ekonomi dan Data Usaha Terpeta Online" merupakan salah satu 
 >>![form input](foto/form.png)
 >![Tabel Data](foto/tabel1.png)
 >![Tabel Data](foto/tabel2.png)
->>>![Halaman Lain](foto/kedaton.png)
+>![Halaman Lain](foto/kedaton.png)
+
+
+
+
+“Dari Lapak ke Layar – Jelajahi UMKM Bandar Lampung dalam bentuk Digital!”
